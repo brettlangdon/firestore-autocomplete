@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firestore autocomplete example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container content">
+        <h1 class="title">
+          Firestore autocomplete example
+        </h1>
+        <form>
+          <div class="field">
+            <div class="control has-icons-left">
+              <input type="text" class="input" placeholder="IMDB Top 250 Movie Title..." />
+              <span class="icon is-small is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </form>
+        <div id="results"></div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
