@@ -18,14 +18,24 @@
         <form>
           <div class="field">
             <div class="control has-icons-left">
-              <input type="text" class="input" placeholder="IMDB Top 250 Movie Title..." />
+              <input type="text" class="input" placeholder="IMDB Top 250 Movie Title..." autofocus tabindex="0" />
               <span class="icon is-small is-left">
                 <i class="fas fa-search"></i>
               </span>
             </div>
           </div>
         </form>
-        <div id="results"></div>
+        <table class="table is-striped is-hoverable is-fullwidth" style="table-layout: fixed;">
+          <thead>
+            <tr>
+              <th style="width: 100px">Position</th>
+              <th>Title</th>
+              <th>Released</th>
+            </tr>
+          </thead>
+          <tbody id="results">
+          </tbody>
+        </table>
       </div>
     </section>
     <script src="app.js"></script>
